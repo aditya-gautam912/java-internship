@@ -1,0 +1,29 @@
+
+from sklearn.datasets import load_iris
+from sklearn.tree import DecisionTreeClassifier, export_text
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.metrics import accuracy_score, classification_report
+iris = load_iris()
+X, Y = iris.data, iris.target
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3, random_state=42)
+dt = DecisionTreeClassifier(random_state=42)
+dt.fit(X_train, Y_train)
+Y_pred = dt.predict(X_test)
+print("Default Accuracy:", round(accuracy_score(Y_test, Y_pred)*100, 2), "%")
+param_grid = {
+'max_depth' : [2, 3, 4, 5, None],
+'min_samples_split': [2, 5, 10],
+'criterion' : ['gini','entropy']
+}
+grid = GridSearchCV(DecisionTreeClassifier(random_state=42),
+param_grid, cv=5, scoring='accuracy')
+grid.fit(X_train, Y_train)
+print("Best Parameters :", grid.best_params_)
+print("Best CV Score :", round(grid.best_score_*100, 2), "%")
+best_dt = grid.best_estimator_
+Y_pred2 = best_dt.predict(X_test)
+print("Tuned Accuracy :", round(accuracy_score(Y_test, Y_pred2)*100, 2), "%")
+print("\nClassification Report:")
+print(classification_report(Y_test, Y_pred2, target_names=iris.target_names))
+print("Decision Tree Rules:")
+print(export_text(best_dt, feature_names=iris.feature_names))
