@@ -1,3 +1,5 @@
-.vscode/
+.vscode/*
+!.vscode/Internship/
+!.vscode/Internship/*.java
 *.class
 *.exe
