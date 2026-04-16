@@ -94,7 +94,7 @@ Thanks to **Kodbud** for providing this internship opportunity and structured ta
 ---
 
 ## 🔗 Connect with Me
-- LinkedIn: (Add your profile link)
+- LinkedIn: (www.linkedin.com/in/aditya-gautam-769900313)
 - GitHub: (Add your GitHub profile link)
 
 ---
