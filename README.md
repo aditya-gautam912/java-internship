@@ -1,102 +1,106 @@
-# 🚀 Java Programming Internship Projects
+# Java Programming Internship Projects
 
-This repository contains my completed tasks from the **Java Programming Internship**.  
-These projects helped me strengthen my core Java concepts and improve problem-solving skills.
+This repository contains Java internship tasks focused on core programming concepts, problem solving, and console-based application development.
 
----
+## Projects Included
 
-## 📌 Tasks Completed
+### 1. Calculator
 
-### 🔢 Task 1: Simple Calculator (Console)
-**Description:**
-A basic calculator that performs:
+A CLI calculator that performs:
+
 - Addition
 - Subtraction
 - Multiplication
 - Division
 
-**Concepts Used:**
-- Scanner (Input)
-- Switch-case / If-else
-- Basic arithmetic operations
+Concepts used:
 
----
+- `Scanner`
+- `switch` control flow
+- basic arithmetic operations
 
-### 🎓 Task 2: Student Grade Management System
-**Description:**
-A program to manage student grades:
-- Input student name and marks (3 subjects)
-- Calculate average
-- Assign grades (A/B/C/Fail)
-- Display student report
+File: `Calculator.java`
 
-**Concepts Used:**
-- Classes and Objects
-- Arrays
-- Conditional logic
+### 2. Student Grade Management System
 
----
+A program that:
 
-### 🏧 Task 3: ATM Simulation
-**Description:**
-A menu-driven ATM system with:
-- Check balance
-- Deposit money
-- Withdraw money
-- Exit option
+- accepts student name and marks for 3 subjects
+- calculates average marks
+- assigns a grade
+- displays a simple report
 
-**Concepts Used:**
-- Loops
-- Conditional statements
-- Methods
-- Menu-driven programs
+Concepts used:
 
----
+- arrays
+- conditional logic
+- input handling
 
-### 🎯 Task 4: Number Guessing Game
-**Description:**
-A simple game where:
-- Random number (1–100) is generated
-- User guesses the number
-- Hints: "Too High" / "Too Low"
-- Tracks number of attempts
+File: `Student_Grade_Management_System.java`
 
-**Concepts Used:**
-- Random class
-- Loops
-- Conditional statements
+### 3. ATM Simulation
 
----
+A menu-driven console application that supports:
 
-## 🛠️ Technologies Used
+- balance checking
+- deposit
+- withdrawal
+- exit flow
+
+Concepts used:
+
+- loops
+- methods
+- menu-driven logic
+
+File: `ATM_Simulation.java`
+
+### 4. Number Guessing Game
+
+A simple game where the user guesses a randomly generated number and receives high/low hints until the correct answer is found.
+
+Concepts used:
+
+- `Random`
+- loops
+- conditionals
+
+File: `Number_Guessing_Game.java`
+
+## Tech Stack
+
 - Java
+- Command Line Interface
 - VS Code / IntelliJ IDEA
-- Command Line Interface (CLI)
 
----
+## How to Run
 
-## 🎥 Project Demonstration
-I have also created video demonstrations for each task explaining the working and logic.
+Compile a file:
 
----
+```powershell
+javac Calculator.java
+```
 
-## 📚 Key Learnings
-- Strong understanding of core Java concepts
-- Improved problem-solving skills
-- Hands-on experience with real-world logic building
-- Writing clean and structured code
+Run the program:
 
----
+```powershell
+java Calculator
+```
 
-## 🙌 Acknowledgment
-Thanks to **Kodbud** for providing this internship opportunity and structured tasks to enhance my programming skills.
+Repeat the same pattern for the other files by replacing the class name.
 
----
+## Learning Outcomes
 
-## 🔗 Connect with Me
-- LinkedIn: (www.linkedin.com/in/aditya-gautam-769900313)
-- GitHub: (https://github.com/aditya-gautam912)
+- strengthened basic Java syntax and control flow
+- practiced user input handling
+- improved logical thinking and problem solving
+- built confidence with small standalone programs
 
----
+## Repository Purpose
 
-⭐ Feel free to explore the projects and give feedback!
+This repository is a record of internship practice work completed to improve Java fundamentals through hands-on tasks.
+
+## Connect
+
+- GitHub: https://github.com/aditya-gautam912
+- LinkedIn: https://www.linkedin.com/in/aditya-gautam-769900313
